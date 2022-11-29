@@ -219,6 +219,9 @@ input::-webkit-inner-spin-button {
     padding: 18px 20px;
     background: transparent;
 }
+.calculator__reset:hover {
+    color: var(--orange);
+}
 /* Steps */
 .steps {
     padding: 100px 0;
@@ -274,6 +277,14 @@ input::-webkit-inner-spin-button {
     font-size: 20px;
     line-height: 30px;
     padding: 0 103px 32px 112px;
+}
+.steps__link {
+    text-decoration: none;
+    color: var(--orange);
+}
+.steps__link:hover {
+    color: var(--orange);
+    border-bottom: 1px solid var(--orange);
 }
 .steps__details[open] summary::after {
     content: url('img/circle.svg');
@@ -359,7 +370,8 @@ input::-webkit-inner-spin-button {
     color: var(--orange);
 }
 .tariff__link:hover {
-    color: var(--black);
+    color: var(--orange);
+    border-bottom: 1px solid var(--orange);
 }
 .tariff__bottom {
     text-decoration: none;
