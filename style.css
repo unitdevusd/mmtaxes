@@ -469,7 +469,6 @@ input::-webkit-inner-spin-button {
 }
 .cta__form {
     position: relative;
-
 }
 .cta__block input {
     border: 1px solid #AAAAAA;
@@ -477,16 +476,16 @@ input::-webkit-inner-spin-button {
     padding: 13px;
 }
 .cta__block input:focus {
-    color: var(--black);
-    outline: none;
+    border: none;
+    box-shadow: 0 0 0 0.1rem var(--orange);
 }
 .cta__btn {
     font-family: var(--font-inter-bd);
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-    color: #FFFFFF;
-    background: #E5E5E5;
+    color: var(--white);
+    background: var(--orange);
     padding: 13px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -494,8 +493,14 @@ input::-webkit-inner-spin-button {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
-.cta__btn:active,
-.cta__btn:hover {
+.cta__btn:disabled {
+    background: #E5E5E5;
+}
+.cta__btn:not(:disabled) {
+    background: var(--orange);
+}
+.cta__btn:not(:disabled):active,
+.cta__btn:not(:disabled):hover {
     color: var(--white);
     background: linear-gradient(90deg, #FF640D 0%, #F8A70C 100%);
 }

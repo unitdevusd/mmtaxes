@@ -24,32 +24,32 @@ js-result = Вывод результата
 */
 ; (function () {
     const income = document.querySelector('#js-income'),
-    cost = document.querySelector('#js-cost'),
-    expanses = document.querySelector('#js-expanses'),
-    insurance = document.querySelector('#js-insurance'),
-    training = document.querySelector('#js-training'),
-    trainingChild = document.querySelector('#js-training-child'),
-    treatment = document.querySelector('#js-treatment'),
-    treatmentExpensive = document.querySelector('#js-treatment-expensive'),
-    sport = document.querySelector('#js-sport'),
-    charity = document.querySelector('#js-charity'),
-    contributions = document.querySelector('#js-contributions'),
-    contributionsIis = document.querySelector('#js-contributions-iis'),
-    info = document.querySelector('.calculator__info'),
-    warning = document.querySelector('.calculator__warning'),
-    result = document.querySelector('#js-result');
+        cost = document.querySelector('#js-cost'),
+        expanses = document.querySelector('#js-expanses'),
+        insurance = document.querySelector('#js-insurance'),
+        training = document.querySelector('#js-training'),
+        trainingChild = document.querySelector('#js-training-child'),
+        treatment = document.querySelector('#js-treatment'),
+        treatmentExpensive = document.querySelector('#js-treatment-expensive'),
+        sport = document.querySelector('#js-sport'),
+        charity = document.querySelector('#js-charity'),
+        contributions = document.querySelector('#js-contributions'),
+        contributionsIis = document.querySelector('#js-contributions-iis'),
+        info = document.querySelector('.calculator__info'),
+        warning = document.querySelector('.calculator__warning'),
+        result = document.querySelector('#js-result');
     let incomeValue = 0, // "Ваш среднемесячный доход до вычета налогов" value
-    costValue = 0, // "Затраты на приобретение жилья" value
-    expansesValue = 0, // "Расходы на уплату процентов по ипотеке" value
-    insuranceValue = 0, // "Страхование жизни" value
-    trainingValue = 0, // "Обучение" value
-    trainingChildValue = 0, // "Обучение ребенка" value
-    treatmentValue = 0, // "Лечение" value
-    treatmentExpensiveValue = 0, // "Дорогостоящее лечение" value
-    sportValue = 0, // "Спорт или фитнес" value
-    charityValue = 0, // "Благотворительность" value
-    contributionsValue = 0, // "Дополнительные взносы в НПФ" value
-    contributionsIisValue = 0; // "Взносы на индивидуальный инвестиционный счет (ИИС)" value
+        costValue = 0, // "Затраты на приобретение жилья" value
+        expansesValue = 0, // "Расходы на уплату процентов по ипотеке" value
+        insuranceValue = 0, // "Страхование жизни" value
+        trainingValue = 0, // "Обучение" value
+        trainingChildValue = 0, // "Обучение ребенка" value
+        treatmentValue = 0, // "Лечение" value
+        treatmentExpensiveValue = 0, // "Дорогостоящее лечение" value
+        sportValue = 0, // "Спорт или фитнес" value
+        charityValue = 0, // "Благотворительность" value
+        contributionsValue = 0, // "Дополнительные взносы в НПФ" value
+        contributionsIisValue = 0; // "Взносы на индивидуальный инвестиционный счет (ИИС)" value
 
     income.addEventListener('input', () => {
         if (income.value > 416666.67) {
@@ -193,3 +193,19 @@ function sum(arr) {
         return accumulator + a;
     }
 }
+// Активация кнопки в форме обратной связи
+document.addEventListener("DOMContentLoaded", function (event) {
+    let inputsCta = [].slice.call(
+        document.querySelectorAll('.cta__form input')),
+        buttonCta = document.querySelector('.cta__btn');
+    inputsCta.forEach(function (el) {
+        el.addEventListener('input', activateBtn, false);
+    });
+    function activateBtn() {
+        let empty = inputsCta.filter(function (el) {
+            return el.value.trim() === '';
+        }).length;
+        buttonCta.disabled = empty !== 0;
+    }
+    activateBtn()
+});
