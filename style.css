@@ -452,7 +452,7 @@ input::-webkit-inner-spin-button {
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
-    padding: 75px 72px 91px 364px;
+    padding: 50px 72px 50px 364px;
 }
 .cta__img {
     width: 435px;
