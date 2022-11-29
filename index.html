@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pravocard.ru/">
+    <meta property="og:title" content="Правокард">
+    <meta property="og:description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Правокард</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header navbar navbar-expand-xl py-3">
+        <div class="container">
+            <div class="w-100 d-flex justify-content-between align-items-center py-2">
+                <a href="/" class="mt-0 me-3 me-md-4 ms-3">
+                    <img src="img/logo.svg" alt="Логотип">
+                </a>
+                <a href="#" class="header__btn btn btn__gray ms-4">Личный кабинет</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 ps-4 my-5 mt-my-0">
+                        <h1 class="hero__title text-uppercase mb-4">Верните налоги,<br> не выходя из дома</h1>
+                        <h2 class="hero__subtitle mb-5">Если вы налоговый резидент РФ и получаете доход, облагаемый НДФЛ
+                            по ставке 13%,<br>
+                            мы поможем вам оформить и подать документы для получения налогового вычета</h2>
+                        <div class="d-grid gap-4 d-md-flex justify-content-md-start">
+                            <a href="#" class="hero__btn-first text-decoration-none btn__orange text-center">Вернуть налоги</a>
+                            <a href="#calculator" class="hero__btn-second btn btn__gray">Калькулятор вычета</a>
+                        </div>
+                    </div>
+                    <div class="col-10 col-sm-8 col-lg-6 mx-auto mx-md-0">
+                        <img src="img/main.jpg" class="hero__img d-block mx-lg-auto img-fluid" alt="Hero Image" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="options">
+            <div class="container">
+                <h3 class="options__title title mb-5">
+                    Вы можете вернуть деньги, если:
+                </h3>
+                <div class="row justify-content-between mb-2 mx-1 options__items">
+                    <div class="col-md-6 options__item">
+                        <p class="options__subtitle">Приобрели жилую <span class="text__orange">недвижимость</span></p>
+                        <p class="text">До 260 000 ₽ при расходах на новое строительство или приобретение на территории
+                            РФ объекта жилой недвижимости (долей в нем), земельных участков под него.</p>
+                    </div>
+                    <div class="col-md-6 px-0">
+                        <img class="img-fluid" src="img/options1.jpg" alt="Приобрели жилую недвижимость" loading="lazy">
+                    </div>
+                </div>
+                <div class="row justify-content-between mb-2 mx-1 options__items">
+                    <div class="col-md-6 px-0 order-1 order-md-0">
+                        <img class="img-fluid" src="img/options2.jpg" alt="Приобрели жилую недвижимость" loading="lazy">
+                    </div>
+                    <div class="col-md-6 options__item order-0 prder-md-1">
+                        <p class="options__subtitle">Погашали проценты <span class="text__orange">по целевым
+                                кредитам</span></p>
+                        <p class="text">До 390 000 ₽ при расходах на погашение процентов по целевым займам (кредитам),
+                            фактически израсходованным на приобретение жилья (долей в нем), земельного участка
+                            под него или нового строительства на территории РФ.</p>
+                    </div>
+                </div>
+                <div class="row justify-content-between mb-2 mx-1 options__items">
+                    <div class="col-md-6 options__item">
+                        <p class="options__subtitle">Оплатили <span class="text__orange">обучение</span></p>
+                        <p class="text">До 15 600 ₽ в год, потраченных на получение образования и новых знаний:</p>
+                        <ul>
+                            <li class="text">для себя,</li>
+                            <li class="text">для детей/опекаемых, </li>
+                            <li class="text">для брата/сестры.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 px-0">
+                        <img class="img-fluid" src="img/options3.jpg" alt="Приобрели жилую недвижимость" loading="lazy">
+                    </div>
+                </div>
+                <div class="row justify-content-between mb-2 mx-1 options__items">
+                    <div class="col-md-6 px-0 order-1 order-md-0">
+                        <img class="img-fluid" src="img/options4.jpg" alt="Приобрели жилую недвижимость" loading="lazy">
+                    </div>
+                    <div class="col-md-6 options__item order-0 order-md-1">
+                        <p class="options__subtitle">Оплатили <span class="text__orange">страхование жизни</span></p>
+                        <p class="text">До 15 600 ₽ в год по договорам страхования жизни, заключенным на срок от 5 лет и
+                            более.</p>
+                    </div>
+                </div>
+                <div class="row justify-content-between mb-2 mx-1 options__items">
+                    <div class="col-md-6 options__item">
+                        <p class="options__subtitle">Оплатили <span class="text__orange">лечение</span></p>
+                        <p class="text">До 15 600 ₽ в год, потраченных на лечение (стоматология, операция, консультация,
+                            ДМС, покупка лекарств, и т.д.).
+                            Если лечение дорогостоящее, то размер вычета — до 13% от суммы лечения.</p>
+                    </div>
+                    <div class="col-md-6 px-0">
+                        <img class="img-fluid" src="img/options5.jpg" alt="Приобрели жилую недвижимость" loading="lazy">
+                    </div>
+                </div>
+                <div class="row justify-content-between mb-5 mx-1 options__items">
+                    <div class="col-md-6 px-0 order-1 order-md-0">
+                        <img class="img-fluid" src="img/options6.jpg" alt="Приобрели жилую недвижимость" loading="lazy">
+                    </div>
+                    <div class="col-md-6 options__item order-0 order-md-1">
+                        <p class="options__subtitle">Оплатили <span class="text__orange">спорт или фитнес</span></p>
+                        <p class="text">До 15 600 ₽ в год, потраченных на физкультурно-оздоровительные услуги для себя
+                            или своих несовершеннолетних детей.</p>
+                    </div>
+                </div>
+                <p class="options__bottom pt-5"><span class="options__danger">Обратите внимание!</span> Вы вправе
+                    вернуть до 15 600 ₽ в год, если делали дополнительные взносы на накопительную часть трудовой пенсии.
+                    При перечислении денежных средств в благотворительные фонды на благотворительные цели налоговый
+                    вычет до 13 % от суммы пожертвования.</p>
+            </div>
+        </section>
+        <section class="calculator" id="calculator">
+            <div class="container">
+                <h3 class="calculator__title title mb-5">сколько денег вы можете вернуть</h3>
+                <form action="" class="calculator__form">
+                    <div class="row">
+                        <div class="col-md-6 mb-4 pe-3">
+                            <label for="js-income" class="form-label">Ваш среднемесячный доход до вычета налогов</label>
+                            <div class="input-group">
+                                <input type="number" id="js-income" class="form-control calculator__input">
+                                <span class="calculator__helper input-group-text" data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    title="Доход, облагаемый НДФЛ 13% и подтвержденный справкой 2-НДФЛ">
+                                    <img src="img/helper.svg" alt="Подсказка">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="calculator__warning"></p>
+                        </div>
+                    </div>
+                    <p class="calculator__subtitle">Расходы за календарный год</p>
+                    <div class="row">
+                        <div class="col-md">
+                            <Label class="form-label" for="js-cost">Затраты на приобретение жилья</Label>
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control calculator__input" id="js-cost">
+                                <span class="calculator__helper input-group-text" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" data-bs-html="true" title="
+                                        Расходы на новое строительство или приобретение на территории РФ объекта жилой недвижимости (долей в нем), земельных участков под него, в частности:
+                                        <ul>
+                                        <li>покупка квартиры, комнаты, жилого дома;</li>
+                                        <li>покупка строительно-отделочных материалов (в строящемся доме);</li>
+                                        <li>покупка земельного участка под строительство или уже с расположенным на нём объектом жилой недвижимости;</li>
+                                        <li>расходы на составление проектно-сметной документации;</li>
+                                        <li>расхожы на услуги по подключению к энергоресурсам и коммунальным сетям</li>
+                                        </ul>">
+                                    <img src="img/helper.svg" alt="Подсказка">
+                                </span>
+                            </div>
+                            <Label class="form-label" for="js-expanses">Расходы на уплату процентов по ипотеке</Label>
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control calculator__input" id="js-expanses">
+                                <span class="calculator__helper input-group-text" data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    title="Расходы на погашение процентов по целевым займам (кредитам), фактически израсходованным на приобретение жилья (долей в нем), земельного участка под него или нового строительства на территории РФ">
+                                    <img src="img/helper.svg" alt="Подсказка">
+                                </span>
+                            </div>
+                            <Label class="form-label" for="js-insurance">Страхование жизни</Label>
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control calculator__input" id="js-insurance">
+                                <span class="calculator__helper input-group-text" data-bs-toggle="tooltip"
+                                    data-bs-html="true" data-bs-placement="top" title="
+                                            Оплата страховых (пенсионных) взносов на добровольное страхование жизни, добровольное пенсионное страхование, негосударственное пенсионное обеспечение:
+                                            <ul>
+                                                <li>в свою пользу;</li>
+                                                <li>в пользу супруга (супруги), родителей и (или) своих детей.</li>
+                                            </ul>
+                                        ">
+                                    <img src="img/helper.svg" alt="Подсказка">
+                                </span>
+                            </div>
+                            <Label class="form-label" for="js-training">Обучение</Label>
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control calculator__input" id="js-training">
+                                <span class="calculator__helper input-group-text" data-bs-toggle="tooltip"
+                                    data-bs-html="true" data-bs-placement="top" title="
+                                            Расходы на оплату:
+                                            <ul>
+                                                <li>собственного обучения любой формы (очное, очно-заочное, вечернее и др.);</li>          
+                                                <li>обучения своего брата или сестры в возрасте до 24 лет (очная форма).</li>
+                                            </ul>
+                                        ">
+                                    <img src="img/helper.svg" alt="Подсказка">
+                                </span>
+                            </div>
+                            <Label class="form-label" for="js-training-child">Обучение ребенка</Label>
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control calculator__input" id="js-training-child">
+                                <span class="calculator__helper input-group-text" data-bs-toggle="tooltip"
+                                    data-bs-html="true" data-bs-placement="top" title="
+                                        Расходы на оплату обучения:
+                                            <ul>
+                                                <li>своего ребенка (детей) или бывших опекаемых подопечных в возрасте до 24 лет (очная форма);</li>          
+                                                <li>своего опекаемого подопечного (подопечных) в возрасте до 18 лет (очная форма).</li>
+                                            </ul>
+                                            При наличии расходов на обучение 2 и более детей за точной суммой возврата обращайтесь к нашим налоговым юристам.
+                                        ">
+                                    <img src="img/helper.svg" alt="Подсказка">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <Label class="form-label" for="js-treatment">Лечение</Label>
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control calculator__input" id="js-treatment">
+                                <span class="calculator__helper input-group-text" data-bs-toggle="tooltip"
+                                    data-bs-html="true" data-bs-placement="top" title="
+                                        Расходы на медицинские услуги (за исключением расходов по дорогостоящим видам лечения), приобретение медикаментов и ДМС:
+                                            <ul>
+                                                <li>за себя / супруга / супругу / родителей / детей в возрасте до 18 лет (с 2022 года возраст увеличен до 24 лет при условии очного обучения детей)
+                                                    В справке об оплате медицинских услуг указан код 01.</li>
+                                            </ul>
+                                        ">
+                                    <img src="img/helper.svg" alt="Подсказка">
+                                </span>
+                            </div>
+                            <Label class="form-label" for="js-treatment-expensive">Дорогостоящее лечение</Label>
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control calculator__input" id="js-treatment-expensive">
+                                <span class="calculator__helper input-group-text" data-bs-toggle="tooltip"
+                                    data-bs-html="true" data-bs-placement="top" title="
+                                        Расходы на медицинские услуги:
+                                            <ul>
+                                                <li>за себя / супруга / супругу / родителей / детей в возрасте до 18 лет (с 2022 года возраст увеличен до 24 лет при условии очного обучения детей)</li>
+                                            </ul>
+                                        Перечень услуг и медикаментов, а также процедуры, относящиеся к дорогостоящему лечению, утверждены постановлением Правительства РФ № 458 от 08.04.2020. 
+                                        В справке об оплате медицинских услуг указан код 02.
+                                        ">
+                                    <img src="img/helper.svg" alt="Подсказка">
+                                </span>
+                            </div>
+                            <Label class="form-label" for="js-sport">Спорт или фитнес</Label>
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control calculator__input" id="js-sport">
+                                <span class="calculator__helper input-group-text" data-bs-toggle="tooltip"
+                                    data-bs-html="true" data-bs-placement="top" title="
+                                        Расходы на оплату физкультурно-оздоровительных услуг, оказываемых в тренажерных залах, фитнес-центрах, детских спортивных секциях, бассейнах и т.п.:
+                                        <ul>
+                                            <li>за себя / детей в возрасте до 18 лет (с 2022 года возраст увеличен до 24 лет при условии очного обучения детей)</li>
+                                        </ul>
+                                        ">
+                                    <img src="img/helper.svg" alt="Подсказка">
+                                </span>
+                            </div>
+                            <Label class="form-label" for="js-charity">Благотворительность</Label>
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control calculator__input" id="js-charity">
+                                <span class="calculator__helper input-group-text" data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    title="Расходы, перечисляемые в виде пожертвований на благотворительные цели в виде денежной помощи">
+                                    <img src="img/helper.svg" alt="Подсказка">
+                                </span>
+                            </div>
+                            <Label class="form-label" for="js-contributions">Дополнительные взносы в НПФ</Label>
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control calculator__input" id="js-contributions">
+                                <span class="calculator__helper input-group-text" data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    title="Расходы на оплату дополнительных страховых взносов на накопительную часть трудовой пенсии">
+                                    <img src="img/helper.svg" alt="Подсказка">
+                                </span>
+                            </div>
+                            <Label class="form-label" for="js-contributions-iis">Взносы на индивидуальный инвестиционный
+                                счет (ИИС)</Label>
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control calculator__input" id="js-contributions-iis">
+                                <span class="calculator__helper input-group-text" data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    title="При внесении денежных средств в налоговом периоде на индивидуальный инвестиционный счет (ИИС) ">
+                                    <img src="img/helper.svg" alt="Подсказка">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row flex-column calculator__bottom">
+                        <div class="col-md-6 mb-3">
+                            <Label class="form-label" for="js-result">Ориентировочная сумма налога к
+                                возрату:</Label>
+                            <input type="text" class="form-control calculator__result border-0" id="js-result"
+                                value="0 руб." disabled>
+                            <div class="calculator__info form-text">Сумма налога к возврату рассчитывается в
+                                соответствии с текущим законодательством и является примерной. Для получения точной
+                                суммы возврата обращайтесь к нашим налоговым юристам.</div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <button type="button" class="calculator__btn btn__orange">Вернуть налоги</button>
+                            <button type="reset" class="calculator__reset border-0 ms-3">Сбросить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="steps">
+            <div class="container">
+                <h3 class="steps__title title mb-5">
+                    Как получить налоговый вычет
+                </h3>
+                <details class="steps__details steps__first mb-2">
+                    <summary class="steps__summary">Вы присылаете нам сканы документов через Личный кабинет</summary>
+                    <p class="steps__text">Доступ в <span class="text__orange">Личный кабинет</span> вам будет
+                        предоставлен после идентификации на данной странице. Список необходимых документов будет
+                        сформирован после прохождения опроса в Личном кабинете.</p>
+                </details>
+                <details class="steps__details steps__second mb-2">
+                    <summary class="steps__summary">Мы формируем пакет документов для ФНС России</summary>
+                    <ul class="steps__text">
+                        <li>Заполним за вас декларацию 3-НДФЛ и заявление о возврате суммы излишне уплаченного налога;
+                        </li>
+                        <li>Через Личный кабинет направим документы вам на подпись;</li>
+                        <li>После подписания передадим полностью сформированный пакет документов в территориальное
+                            отделение ФНС России.</li>
+                    </ul>
+                </details>
+                <details class="steps__details steps__third mb-2">
+                    <summary class="steps__summary">Вы получаете денежные средства на ваш расчетный счет</summary>
+                    <p class="steps__text">Срок, предусмотренный законодательством, составляет 4 месяца с даты отправки
+                        документов в ФНС России.</p>
+                </details>
+            </div>
+        </section>
+        <section class="tariff">
+            <div class="container">
+                <h3 class="tariff__title title mb-5">
+                    Выберите свой тарифный план
+                </h3>
+                <div class="row justify-content-between mb-5 mx-1">
+                    <div class="tariff__item mb-3">
+                        <p class="tariff__head mb-1">Тариф</p>
+                        <p class="tariff__name text-uppercase mb-3">Лайт</p>
+                        <p class="tariff__info mb-4"><span class="tariff__info-big">1 декларация</span><br>
+                            включает возврат социальных расходов<br>
+                            Письменные и устные консультации</p>
+                        <div class="tariff__cost d-flex align-items-center">
+                            <p class="tariff__price">1400 ₽</p>
+                            <p class="tariff__regular-price">2000 ₽</p>
+                            <p class="tariff__discount">-30%</p>
+                        </div>
+                        <a href="" class="tariff__btn btn__orange mb-4">Подключить за 1400 ₽</a>
+                        <p class="tariff__text">Ознакомиться с <a href="#" class="tariff__link">условиями предоставления
+                                услуг</a></p>
+                    </div>
+                    <div class="tariff__item mb-3">
+                        <p class="tariff__head mb-1">Тариф</p>
+                        <p class="tariff__name text-uppercase mb-3">Максимум</p>
+                        <p class="tariff__info mb-4"><span class="tariff__info-big">3 декларации</span><br>
+                            Возврат социальных и имущественных расходов<br>
+                            Письменные и устные консультации</p>
+                        <div class="tariff__cost d-flex align-items-center">
+                            <p class="tariff__price">3500 ₽</p>
+                            <p class="tariff__regular-price">5000 ₽</p>
+                            <p class="tariff__discount">-30%</p>
+                        </div>
+                        <a href="" class="tariff__btn btn__orange mb-4">Подключить за 3500 ₽</a>
+                        <p class="tariff__text">Ознакомиться с <a href="#" class="tariff__link">условиями предоставления
+                                услуг</a></p>
+                    </div>
+                </div>
+                <label for="show-table" class="tariff__bottom align-items-center mb-5 d-none d-md-flex"> <img
+                        src="img/eye.svg" alt="Сравнение"><span class="tariff__bottom-border">Сравнить
+                        тарифы</span></label>
+                <input type="checkbox" id="show-table" role="button">
+
+                <div class="tariff__wrapper table-responsive">
+                    <table class="table tariff__table" style="empty-cells: show;">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="border-bottom-0"></th>
+                                <th scope="col" class="text-center ps-5 pt-4" style="background: #FFFFFF;">Лайт</th>
+                                <th scope="col" class="text-center ps-5 pt-4">Максимум</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Бесплатный звонок из любой точки РФ 8-800</th>
+                                <td style="background: #FFFFFF;"><img src="img/infinity.svg" alt="Бесконечно"></td>
+                                <td><img src="img/infinity.svg" alt="Бесконечно"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Доступ в Личный кабинет (включая переписку с компанией)</th>
+                                <td style="background: #FFFFFF;"><img src="img/infinity.svg" alt="Бесконечно"></td>
+                                <td><img src="img/infinity.svg" alt="Бесконечно"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Устная правовая консултация (включая разъяснения по документам)</th>
+                                <td style="background: #FFFFFF;"><img src="img/infinity.svg" alt="Бесконечно"></td>
+                                <td><img src="img/infinity.svg" alt="Бесконечно"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Проверка комплекта и содержания документов</th>
+                                <td style="background: #FFFFFF;"><img src="img/infinity.svg" alt="Бесконечно"></td>
+                                <td><img src="img/infinity.svg" alt="Бесконечно"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Письменная консультация и составление документов от имени Клиента
+                                    (декларация 3-НДФЛ и заявление на возврат НДФЛ)</th>
+                                <td style="background: #FFFFFF;">социальный</td>
+                                <td>социальный<br>
+                                    имущественный</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Услуги распространяются на получение налогового вычета </th>
+                                <td style="background: #FFFFFF;">1 период</td>
+                                <td>3 периода</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Услуги распространяются на следующее кол-во налоговых периодов</th>
+                                <td style="background: #FFFFFF;">1 раз</td>
+                                <td>1 раз</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Отправка готового комплекта документов в налоговую инспекцию</th>
+                                <td style="background: #FFFFFF;"><img src="img/infinity.svg" alt="Бесконечно"></td>
+                                <td><img src="img/infinity.svg" alt="Бесконечно"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Устная и письменная правовая поддержка при камеральной проверке</th>
+                                <td style="background: #FFFFFF;"><img src="img/infinity.svg" alt="Бесконечно"></td>
+                                <td><img src="img/infinity.svg" alt="Бесконечно"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Скидка</th>
+                                <td style="background: #FFFFFF;">-30%</td>
+                                <td>-30%</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="border-bottom-0">Стоимость услуг</th>
+                                <td class="border-bottom-0 pb-3" style="background: #FFFFFF;">
+                                    <div class="d-flex flex-column">
+                                        <p><span class="tariff__table-bold me-2">1400 ₽</span> <span
+                                                class="tariff__table-light">2000 ₽</span></p><a href="#"
+                                            class="tariff__table-btn btn__orange">Подключить</a>
+                                    </div>
+                                </td>
+                                <td class="border-bottom-0 pb-3">
+                                    <div class="d-flex flex-column">
+                                        <p><span class="tariff__table-bold me-2">3500 ₽</span> <span
+                                                class="tariff__table-light">5000 ₽</span></p><a href="#"
+                                            class="tariff__table-btn btn__orange">Подключить</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-12 d-flex flex-wrap gap-3 pb-2">
+                    <a href="tel:+78005003568" class="footer__tel text-decoration-none">8 (800) 500-35-68</a>
+                    <p class="footer__subtitle">для консультаций по вопросам налогового вычета</p>
+                </div>
+                <ul class="nav flex-column flex-lg-row gap-2 gap-lg-5 pb-4">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 footer__link">Пользовательское
+                            соглашение</a>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 footer__link">Политика
+                            конфиденциальности</a>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 footer__link">Обработка персональных
+                            данных</a></li>
+                </ul>
+                <div class="d-flex flex-wrap gap-3 ps-2">
+                    <p class="footer__text">© ООО «Юридические Решения», 2007-2022</p>
+                    <p class="footer__text">ОГРН: 5177746279266, ИНН: 9718083320, КПП: 770701001.</p>
+                    <p class="footer__text">Адрес: 127055, г. Москва, Бутырский Вал, д. 68/70 стр. 1.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
