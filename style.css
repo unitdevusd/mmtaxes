@@ -299,7 +299,7 @@ input::-webkit-inner-spin-button {
 }
 /* Tariff */
 .tariff {
-    padding: 100px 0;
+    padding: 100px 0 50px;
 }
 .tariff__item {
     background: var(--grayF7);
@@ -337,6 +337,7 @@ input::-webkit-inner-spin-button {
     line-height: 34px;
 }
 .tariff__regular-price {
+    text-decoration: line-through;
     font-family: var(--pragma-lt);
     font-size: 20px;
     line-height: 30px;
@@ -431,6 +432,7 @@ input::-webkit-inner-spin-button {
     line-height: 30px;
 }
 .tariff__table-light {
+    text-decoration: line-through;
     font-size: 20px;
     line-height: 30px;
     color: #a5a5a5;
@@ -438,7 +440,65 @@ input::-webkit-inner-spin-button {
 .tariff__table-bottom {
     border: 1px solid var(--grayF7);
 }
+/* Cta */
+.cta {
+    padding: 61px 0 127px;
+}
+.cta__block {
+    position: relative;
+    border: 4px solid var(--orange);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 75px 72px 91px 364px;
+}
+.cta__img {
+    width: 435px;
+    position: absolute;
+    left: 87px;
+    bottom: 0;
+}
+.cta__title {
+    font-family: var(--font-halvar-bd);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+    color: var(--orange);
+}
+.cta__form {
+    position: relative;
 
+}
+.cta__block input {
+    border: 1px solid #AAAAAA;
+    border-radius: 5px;
+    padding: 13px;
+}
+.cta__block input:focus {
+    color: var(--black);
+    outline: none;
+}
+.cta__btn {
+    font-family: var(--font-inter-bd);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: #E5E5E5;
+    padding: 13px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.cta__btn:active,
+.cta__btn:hover {
+    color: var(--white);
+    background: linear-gradient(90deg, #FF640D 0%, #F8A70C 100%);
+}
 /* Footer */
 .footer {
     padding: 60px 0;
@@ -484,9 +544,22 @@ input::-webkit-inner-spin-button {
     .tariff__item {
         width: 100%;
     }
+    .cta__block {
+        padding: 75px 72px 91px 75px;
+    }
 }
 @media (max-width: 480px) {
     .header__btn {
         padding: 8px 10px;
+    }
+    .cta {
+        padding: 20px 0 20px;
+    }
+    .cta__block {
+        padding: 20px;
+    }
+    .cta__title {
+        font-size: 28px;
+        line-height: 120%;
     }
 }
