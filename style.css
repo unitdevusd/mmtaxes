@@ -1,24 +1,24 @@
 @font-face {
     font-family: 'Halvar Breitschrift Bd';
-    src: url('/fonts/HalvarBreit-Bd.woff') format('woff');
+    src: url('../fonts/HalvarBreit-Bd.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Pragmatica-Light';
-    src: url('/fonts/Pragmatica-Light.woff') format('woff');
+    src: url('../fonts/Pragmatica-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: 'Pragmatica-Medium';
-    src: url('/fonts/Pragmatica-Medium.woff') format('woff');
+    src: url('../fonts/Pragmatica-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: 'Pragmatica-Bold';
-    src: url('/fonts/Pragmatica-Bold.woff') format('woff');
+    src: url('../fonts/Pragmatica-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
